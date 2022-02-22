@@ -15,7 +15,7 @@ class HelloWorld implements Page {
 
   @override
   Page metadata(String key, String value) {
-    if('Dart-Pages-Query' == key && '/hello' == value) {
+    if('DartPages-Query' == key && '/hello' == value) {
       return TextPage("Hello, world!");
     }
     return TextPage("Not found!");
@@ -24,7 +24,7 @@ class HelloWorld implements Page {
   @override
   output(Output output) {
     return output
-      .metadata("Dart-Pages-Body", "Not found");
+      .metadata("DartPages-Body", "Not found");
   }
 }
 

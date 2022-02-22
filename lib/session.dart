@@ -16,7 +16,7 @@ class Session {
             target.metadata(name, value.join(','));
         });
 
-        target.metadata('Dart-Pages-Query', request.uri.path);
+        target.metadata('DartPages-Query', request.uri.path);
 
         return target;
     }

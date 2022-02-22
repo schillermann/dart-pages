@@ -23,7 +23,7 @@ class SimpleOutput implements Output {
     String body = '';
 
     for (String k in this._before.keys) {
-      if(k == 'Dart-Pages-Body') {
+      if(k == 'DartPages-Body') {
         body = this._before[k].toString();
         continue;
       }

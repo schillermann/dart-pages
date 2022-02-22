@@ -17,6 +17,6 @@ class TextPage implements Page {
     return output
       .metadata("Content-Type", "text/plain")
       .metadata("Content-Length", this._body.length.toString())
-      .metadata("Dart-Pages-Body", this._body);
+      .metadata("DartPages-Body", this._body);
   }
 }

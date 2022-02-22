@@ -18,6 +18,6 @@ class SimplePage implements Page {
     output(Output output) {
       return output
         .metadata("Content-Length", this._body.length.toString())
-        .metadata("Dart-Pages-Body", this._body);
+        .metadata("DartPages-Body", this._body);
     }
 }
