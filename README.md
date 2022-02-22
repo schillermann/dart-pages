@@ -11,7 +11,7 @@ import 'lib/page.dart';
 import 'lib/simple_page.dart';
 import 'lib/text_page.dart';
 
-class PageHelloWorld implements Page {
+class HelloWorld implements Page {
 
   @override
   Page metadata(String key, String value) {
@@ -29,6 +29,6 @@ class PageHelloWorld implements Page {
 }
 
 Future<void> main() async {
-  App(PageHelloWorld()).start(8000);
+  App(HelloWorld()).start(8000);
 }
 ```
