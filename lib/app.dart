@@ -19,7 +19,7 @@ class App {
       new Session(this._page)
         .page(request)
         .output(new SimpleOutput(new HashMap<String, String>()))
-        .writeTo(request.response);
+        .write(request.response);
 
       await request.response.close();
     }

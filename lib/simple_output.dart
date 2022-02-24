@@ -19,7 +19,7 @@ class SimpleOutput implements Output {
   }
 
   @override
-  void writeTo(HttpResponse output) {
+  void write(HttpResponse output) {
     String body = '';
 
     for (String k in this._before.keys) {

@@ -13,10 +13,10 @@ class Session {
         Page target = this._page;
         request.headers.forEach(
           (name, value) {
-            target.metadata(name, value.join(','));
+            target = target.metadata(name, value.join(','));
         });
 
-        target.metadata('DartPages-Query', request.uri.path);
+        target = target.metadata('DartPages-Query', request.uri.path);
 
         return target;
     }

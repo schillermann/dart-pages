@@ -15,10 +15,13 @@ class HelloWorld implements Page {
 
   @override
   Page metadata(String key, String value) {
-    if('DartPages-Query' == key && '/hello' == value) {
-      return TextPage("Hello, world!");
+    if('DartPages-Query' == key) {
+      if ('/hello' == value) {
+        return TextPage("Hello, world!");
+      }
     }
-    return TextPage("Not found!");
+
+    return this;
   }
 
   @override
